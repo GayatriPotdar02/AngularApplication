@@ -1,0 +1,25 @@
+<p>about works!</p>
+
+<form [formGroup]="registerForm" >
+
+    <input [(ngModel)]="name" type="text" formControlName="name" placeholder="name">
+    <input [(ngModel)]="surname" type="text" formControlName="surname" placeholder="surname">
+    
+    <button (click)="submitdata()">submit</button>
+    <a data-bs-toggle="modal" data-bs-target="#exampleModal" #sellMyProduct class="btn btn-primary">Sell My Product</a>
+    </form>
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" >
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLabel">
+                 Add New Product
+                </h5> -->
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+   <h2>here we get this pop up !!!!!!!!!!!</h2>
+    </div>

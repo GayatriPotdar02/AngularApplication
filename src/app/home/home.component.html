@@ -1,0 +1,14 @@
+<p>home works!</p>
+<div *ngFor="let card of cards">
+    <h2>{{card.name}}</h2>
+    <h4>{{card.surname}}</h4>
+<button (click)="buy(card)" >add data</button>
+</div>
+
+<form [formGroup]="registerForm"] >
+
+<input type="text" formControlName="name" placeholder="name">
+<input type="text" formControlName="surnamename" placeholder="surnamename">
+
+<button (click)="submitdata()">submit</button>
+</form>
